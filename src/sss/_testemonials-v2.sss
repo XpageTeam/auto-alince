@@ -1,4 +1,4 @@
-.testemonials-v2
+.testemonials-col-2
 	.testemonials
 
 		&__list 
@@ -12,8 +12,10 @@
 			transition: box-shadow .3s ease
 			break-inside: avoid
 
-			&:not(:last-child)
-				margin-bottom: 30px
+			&-cont
+
+				&:not(:last-child)
+					margin-bottom: 30px
 
 
 			&:hover
@@ -111,7 +113,7 @@
 
 @media screen and (max-width: 1200px)
 
-	.testemonials-v2 
+	.testemonials-col-2 
 		.testemonials__item
 			padding: 30px
 
@@ -127,7 +129,7 @@
 
 @media screen and (max-width: 667px)
 
-	.testemonials-v2 
+	.testemonials-col-2
 		.testemonials
 
 			&__list 

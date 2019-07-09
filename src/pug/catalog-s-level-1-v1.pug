@@ -2,7 +2,7 @@
 html(lang="ru")
 	head
 		meta(charset="utf-8")
-		title Каталог (слуги) v1
+		title Каталог
 		include inc/head.pug
 		include inc/css.pug
 	body.inner
@@ -10,9 +10,6 @@ html(lang="ru")
 		#page-wr
 			include inc/header.pug
 			#content
-
-				.cart-cont
-					.cart-small(data-count="2")
 
 				.title-block__cont
 					.wrapper
@@ -25,14 +22,15 @@ html(lang="ru")
 								h1 Каталог
 
 				.wrapper 
-					.catalog-services-v-1
+					.catalog-col-2
 						.catalog-list
 							- for (var i = 0; i < 9; i++)
-								a(href="").catalog-item.wow
-									figure.catalog-item__img
-										img(src="img/photos/catalog-one-v-1.jpg", alt="")
-									.catalog-item__info
-										.catalog-item__title Дома из клееного<br> бруса
+								.catalog-item-cont
+									a(href="").catalog-item
+										figure.catalog-item__img
+											img(src="img/photos/catalog-one-v-1.jpg", alt="")
+										.catalog-item__info
+											.catalog-item__title Дома из клееного<br> бруса
 
 
 					
