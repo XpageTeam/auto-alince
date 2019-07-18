@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Партнеры
+		include inc/head.pug
+		include inc/css.pug
+	body.inner
+		.mobile-menu
+		#page-wr
+			include inc/header.pug
+			#content
+
+				.title-block__cont
+					.wrapper
+						.title-block
+							.title-block__crumbs
+								.bread-crumbs
+									a.bread-crumbs__link(href="#" title="Главная") Главная
+									span.bread-crumbs__this(href="#") Партнеры
+							.title-block__title
+								h1 Партнеры
+
+				.wrapper
+					.partners__cont
+						.partners-col-2
+							.partners__list
+								- for (var i = 0; i < 9; i++)
+									.partners__item-cont
+										.partners__item
+											figure.partners__item-img
+												img(src="img/partner-1.png")
+											.partners__item-title
+									.partners__item-cont
+										.partners__item
+											figure.partners__item-img
+												img(src="img/partner-2.png")
+											.partners__item-title 
+
+											
+									
+
+
+
+
+
+			include inc/footer.pug
+		include inc/scripts.pug

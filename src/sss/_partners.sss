@@ -1,0 +1,60 @@
+.partners
+	&__list
+		display: flex
+		flex-wrap: wrap
+		border-top: 1px solid var(--second-color)
+		border-left: 1px solid var(--second-color)
+
+	&__item
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		z-index: 10
+
+
+		img
+			display: block
+
+		&-cont
+			position: relative
+			display: flex
+			padding: 60px 20px
+			border-right: 1px solid var(--second-color)
+			border-bottom: 1px solid var(--second-color)
+			width: calc(100% / 5)
+
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				right: 0
+				bottom: 0
+				background: rgba(0,0,0, .05)
+				transition: background .5s ease
+
+			&:hover
+				&:before
+					background: #fff
+
+@media screen and (max-width: 1000px)
+	.partners
+
+		&__item
+
+			&-cont
+				padding: 40px 20px
+				width: calc(100% / 4)
+
+
+@media screen and (max-width: 667px)
+	.partners
+
+		&__item
+
+			&-cont
+				padding: 40px 20px
+				width: calc(100% / 2)
