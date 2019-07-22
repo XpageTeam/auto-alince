@@ -110,10 +110,18 @@
 	.slick
 		&-slide
 			margin: 15px
+			height: auto !important
+			display: flex
+
+			> div
+				display: flex !important
 
 
 		&-list
 			margin: -15px
+
+		&-track
+			display: flex !important
 
 
 	.slider-block
@@ -142,7 +150,7 @@
 			max-width: 245px
 
 		&__item
-			display: flex
+			display: flex !important
 			flex-direction: column
 			flex: 1 1 auto
 			text-decoration: none

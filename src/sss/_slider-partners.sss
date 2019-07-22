@@ -33,30 +33,40 @@
 
 
 
-		.slick
-			&-arrow
-				position: relative
+	.slick
+		&-arrow
+			position: relative
 
-				size: 40px
-				border-radius: 50%
-				font-size: 0
-				background: #fff !important
-				border: 0
-				transition: background .3s ease
-
-
-
-				&:hover
-					background: var(--main-color) !important
+			size: 40px
+			border-radius: 50%
+			font-size: 0
+			background: #fff !important
+			border: 0
+			transition: background .3s ease
 
 
 
+			&:hover
+				background: var(--main-color) !important
 
-			&-next
-				margin-left: 18px
 
-			&-prev
-				transform: rotate(-180deg)
+
+
+		&-next
+			margin-left: 18px
+
+		&-prev
+			transform: rotate(-180deg)
+
+		&-slide 
+			display: flex !important
+			height: auto !important
+
+			> div
+				display: flex !important
+
+		&-track
+			display: flex !important
 
 
 	.partners
@@ -66,6 +76,7 @@
 			justify-content: center
 			filter: grayscale(100%)
 			transition: filter .3s ease
+			padding: 20px
 
 			&:hover
 				filter: grayscale(0)
@@ -81,3 +92,16 @@
 
 	.slider-partners
 		padding: 2rem 0 3rem !important
+
+
+@media screen and (max-width: 667px)
+	
+	.slider-partners
+		padding: 2rem 0 2rem !important
+
+		.title 
+			margin-bottom: 20px !important
+
+		.partners__item
+			padding: 10px
+

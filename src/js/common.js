@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", e => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: false,
+		adaptiveHeight: true,
 		appendArrows: $('.slider-one').find('.slider-arrow'),
 
 	})
@@ -122,6 +123,7 @@ document.addEventListener("DOMContentLoaded", e => {
 				settings: {
 					slidesToShow: 1,
 					rows: 1,
+					adaptiveHeight: true,
 				},
 
 			}
@@ -156,7 +158,7 @@ document.addEventListener("DOMContentLoaded", e => {
 		})
 	})
 
-	$('.slider-nav .reset-filter').click(function(){
+	$('.slider-nav .btn').click(function(){
 		$('.slider-nav input').prop('checked', false);
 		$sliderOne.slick('slickUnfilter');
 		$sliderRowTwo.slick('slickUnfilter');
@@ -180,6 +182,7 @@ document.addEventListener("DOMContentLoaded", e => {
 				breakpoint: 660,
 				settings: {
 					slidesToShow: 1,
+					adaptiveHeight: true,
 				},
 
 			}
@@ -205,6 +208,7 @@ document.addEventListener("DOMContentLoaded", e => {
 				breakpoint: 660,
 				settings: {
 					slidesToShow: 1,
+					adaptiveHeight: true,
 				},
 
 			},
@@ -406,8 +410,8 @@ document.addEventListener("DOMContentLoaded", e => {
 	})
 
 
-	$('.testemonials-btn, .btn, .catalog__info-link-more').click(function(e){
-		e.preventDefault();
+	$('.testemonials-btn, .catalog__info-link-more').click(function(e){
+		// e.preventDefault();
 
 		let $this = $(this);
 

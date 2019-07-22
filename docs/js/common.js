@@ -647,6 +647,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: false,
+		adaptiveHeight: true,
 		appendArrows: (0, _jquery2.default)('.slider-one').find('.slider-arrow')
 
 	});
@@ -682,7 +683,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 			breakpoint: 660,
 			settings: {
 				slidesToShow: 1,
-				rows: 1
+				rows: 1,
+				adaptiveHeight: true
 			}
 
 		}]
@@ -713,7 +715,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		});
 	});
 
-	(0, _jquery2.default)('.slider-nav .reset-filter').click(function () {
+	(0, _jquery2.default)('.slider-nav .btn').click(function () {
 		(0, _jquery2.default)('.slider-nav input').prop('checked', false);
 		$sliderOne.slick('slickUnfilter');
 		$sliderRowTwo.slick('slickUnfilter');
@@ -734,7 +736,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		}, {
 			breakpoint: 660,
 			settings: {
-				slidesToShow: 1
+				slidesToShow: 1,
+				adaptiveHeight: true
 			}
 
 		}]
@@ -756,7 +759,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		}, {
 			breakpoint: 660,
 			settings: {
-				slidesToShow: 1
+				slidesToShow: 1,
+				adaptiveHeight: true
 			}
 
 		}]
@@ -922,8 +926,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		$this.closest('.forms__input-cont--file').after(inputFileclone);
 	});
 
-	(0, _jquery2.default)('.testemonials-btn, .btn, .catalog__info-link-more').click(function (e) {
-		e.preventDefault();
+	(0, _jquery2.default)('.testemonials-btn, .catalog__info-link-more').click(function (e) {
+		// e.preventDefault();
 
 		var $this = (0, _jquery2.default)(this);
 
