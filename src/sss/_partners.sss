@@ -2,8 +2,7 @@
 	&__list
 		display: flex
 		flex-wrap: wrap
-		border-top: 1px solid var(--second-color)
-		border-left: 1px solid var(--second-color)
+		margin: 0 0 -20px -20px
 
 	&__item
 		position: relative
@@ -20,10 +19,9 @@
 		&-cont
 			position: relative
 			display: flex
-			padding: 60px 20px
-			border-right: 1px solid var(--second-color)
-			border-bottom: 1px solid var(--second-color)
-			width: calc(100% / 5)
+			padding: 40px 20px
+			width: calc((100% - 20px * 5) / 5)
+			margin: 0 0 20px 20px
 
 			&:before
 				content: ''
@@ -47,7 +45,7 @@
 
 			&-cont
 				padding: 40px 20px
-				width: calc(100% / 4)
+				width: calc((100% - 20px * 4) / 4)
 
 
 @media screen and (max-width: 667px)
@@ -57,4 +55,4 @@
 
 			&-cont
 				padding: 40px 20px
-				width: calc(100% / 2)
+				width: calc((100% - 20px * 2) / 2)
